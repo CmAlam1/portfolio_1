@@ -196,7 +196,8 @@ footer {
     width: 50%;
 }
 
-.contact input[type="text"],.contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -213,6 +214,68 @@ textarea {
     height: 180px;
 }
 
-.social-icons{
+.social-icons {
     margin-right: 25px;
+}
+
+
+
+/* responsive  */
+
+@media screen and (max-width : 576px) {
+    .header{
+        background-image: none;
+    }
+
+    nav,
+    nav > ul,
+    .banner,
+    .skills-container,
+    .resume-container,
+    .about-info {
+        flex-direction: column;
+    }
+
+    nav > ul{
+        gap: 10px;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+
+    .banner,
+    #iDo {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .btn-style{
+        margin-bottom: 15px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width : 576px) and (max-width : 960px) {
+
+    footer,
+    .about {
+        padding: 30px;
+    }
+    .btn-style{
+        margin-bottom: 15px;
+    }
 }
